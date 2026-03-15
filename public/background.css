@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .article:first-letter {
@@ -10,7 +11,7 @@ body {
     vertical-align: top;
 }
 
-article {
+.article {
     font-family: "sans-serif", "Georgia";
     font-size: 20px;
     line-height: 1.7;
@@ -37,14 +38,9 @@ article {
     align-self: flex-end;
     align-content: flex-end;
     flex-wrap: wrap;
-
 }
 
 .hover-cover:hover {
-    -webkit-transition: all 1.5s;
-    -moz-transition: all 1.5s;
-    -ms-transition: all 1.5s;
-    -o-transition: all 1.5s;
     transition: all 1.5s;
     opacity: 1;
 }
@@ -56,7 +52,7 @@ li {
 .inline {
     height: 300px;
     width: 100%;
-    display: inline
+    display: inline;
 }
 
 .nowrap {
@@ -68,7 +64,7 @@ li {
 .background {
     background: url(beluga.jpg);
     position: fixed;
-    margin: 0%;
+    margin: 0;
     padding: 0;
     top: 0;
     left: 0;
@@ -76,12 +72,10 @@ li {
     height: 100%;
     min-width: 1000px;
     z-index: -10;
-    zoom: 1;
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-position: center 0;
-
 }

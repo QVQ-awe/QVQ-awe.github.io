@@ -1,141 +1,107 @@
 <!doctype html>
 <html lang="zh-CN">
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#
-            ">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#
-                        ">Home</a>
-        <a class="nav-link" href="data.html">Data</a>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid;textalign:right">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>我的个人主页</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!-- 引入样式 -->
-  <!-- <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css"> -->
   <link href="public/background.css" rel="stylesheet">
-
+  <link href="public/site.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="row background"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 p-3 bg-primary text-white,inline">
-        <div class="card-body">
-          <h1 class="card-title">作业内容</h1>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p><a href="Profile.html
-                                    " class="btn btn-light">Go somewhere</a>
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">我的主页</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">首页</a>
+          <a class="nav-link" href="data.html">数据</a>
+          <a class="nav-link" href="About.html">个人介绍</a>
         </div>
       </div>
-      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 p-3 bg-dark text-white">
-        <ul class="project_info">
-          <li class="de_topic_box">
-            <p>iii</p>
-            <!-- <img src="public/beluga.jpg" class="" alt="..."> -->
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
+      <div class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="搜索" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">搜索</button>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 p-3 bg-primary text-white,inline">
-        <div class="card-body">
-          <h1 class="card-title">作业内容</h1>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p><a href="Profile.html
-                                    " class="btn btn-light">Go somewhere</a>
-        </div>
-      </div>
-      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 p-3 bg-dark text-white">
-        <ul class="project_info">
-          <li class="de_topic_box">
-            <p>iii</p>
-            <!-- <img src="public/beluga.jpg" class="" alt="..."> -->
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
+  </nav>
+
+  <!-- 背景 -->
+  <div class="background"></div>
+
+  <!-- 主要内容 -->
+  <div class="container mt-4">
+    <!-- 欢迎区域 -->
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h1 class="text-white display-4">欢迎来到我的个人主页</h1>
+        <p class="text-white-50 lead">探索、创造、分享</p>
       </div>
     </div>
+
+    <!-- 项目卡片 -->
     <div class="row">
-      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 p-3 bg-primary text-white,inline">
-        <div class="card-body">
-          <h1 class="card-title">作业内容</h1>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p><a href="Profile.html" class="btn btn-light">Go somewhere</a>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card h-100 project-card">
+          <img src="public/beluga.jpg" class="card-img-top" alt="项目 1">
+          <div class="card-body">
+            <h5 class="card-title text-white">项目一</h5>
+            <p class="card-text text-white-50">这是一个精彩的项目介绍，展示我的工作和成就。</p>
+            <a href="Profile.html" class="btn btn-primary">查看详情</a>
+          </div>
         </div>
       </div>
-      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 p-3 bg-dark text-white">
-        <ul class="project_info">
-          <li class="de_topic_box">
-            <p>iii</p>
-            <!-- <img src="public/beluga.jpg" class="" alt="..."> -->
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 p-3 bg-primary text-white ">
-        <div class="card-body">
-          <h1 class="card-title">作业内容</h1>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p><a href="Profile.html
-                                    " class="btn btn-light">Go somewhere</a>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card h-100 project-card">
+          <img src="public/beluga.jpg" class="card-img-top" alt="项目 2">
+          <div class="card-body">
+            <h5 class="card-title text-white">项目二</h5>
+            <p class="card-text text-white-50">探索技术的边界，创造更好的用户体验。</p>
+            <a href="Profile.html" class="btn btn-primary">查看详情</a>
+          </div>
         </div>
       </div>
-      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 p-3 bg-dark text-white">
-        <ul class="project_info">
-          <li class="de_topic_box">
-            <p>iii</p>
-            <!-- <img src="public/beluga.jpg" class="" alt="..."> -->
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
-          <li class="de_topic_box">
-            <img src="public/beluga.jpg" class="" alt="...">
-          </li>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card h-100 project-card">
+          <img src="public/beluga.jpg" class="card-img-top" alt="项目 3">
+          <div class="card-body">
+            <h5 class="card-title text-white">项目三</h5>
+            <p class="card-text text-white-50">不断创新，追求卓越，实现更多可能。</p>
+            <a href="Profile.html" class="btn btn-primary">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card h-100 project-card">
+          <img src="public/beluga.jpg" class="card-img-top" alt="项目 4">
+          <div class="card-body">
+            <h5 class="card-title text-white">项目四</h5>
+            <p class="card-text text-white-50">用代码改变世界，用设计点亮生活。</p>
+            <a href="Profile.html" class="btn btn-primary">查看详情</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- 页脚 -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 我的个人网站。All Rights Reserved.</p>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim"
     crossorigin="anonymous"></script>
-  <!-- <script src="//unpkg.com/iview/dist/iview.min.js"></script> -->
 </body>
 
 </html>
